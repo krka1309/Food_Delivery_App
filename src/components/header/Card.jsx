@@ -30,7 +30,7 @@ export const Card = () => {
             </button>
           </div>
           <div>
-            <Carts/>
+            <Carts />
           </div>
         </div>
       </div>

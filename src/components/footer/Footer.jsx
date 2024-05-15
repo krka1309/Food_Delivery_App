@@ -1,7 +1,6 @@
 import restu from "../../assets/images/resturant.jpeg";
 import { FaRegPaperPlane } from "react-icons/fa";
-import { FaFacebook, FaYoutube, FaLinkedin, FaGithub } from 'react-icons/fa';
-
+import { FaFacebook, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -16,7 +15,7 @@ function Footer() {
             neque.
           </p>
         </div>
-        <div className="flex flex-col px-3 py-3">
+        <div className="flex flex-col px-3 py-">
           <h3 className="font-semibold text-xl">Delivery Time</h3>
           <p>10:00am - 11.00pm</p>
           <br />
@@ -36,8 +35,17 @@ function Footer() {
           <h2 className="text-xl text-red-500 font-semibold">Newsletter</h2>
           <p>Subscribe our newsletter</p>
           <div className="bg-white flex justify-evenly py-1 border-gray-500">
-            <input type="email" name="" id="btn" required className="px-3 border-gray-500"/>
-            <button className="bg-red-500 text-white p-1 rounded-full border-none outline-none m-2" id="btn">
+            <input
+              type="email"
+              name=""
+              id="btn"
+              required
+              className="px-3 border-gray-500"
+            />
+            <button
+              className="bg-red-500 text-white p-1 rounded-full border-none outline-none m-2"
+              id="btn"
+            >
               <FaRegPaperPlane className="w-6 h-4" />
             </button>
           </div>
@@ -46,23 +54,22 @@ function Footer() {
 
       <div className="flex flex-col md:flex-row md:justify-between justify-center items-center py-5">
         <div className="text-sm">
-        Copyright - 2023, website made by Ajor. All Rights
-              Reserved.
+          Copyright - 2023, website made by Ajor. All Rights Reserved.
         </div>
         <div className="flex">
-            <label className="text-md font-bold">Follow:</label>
-            <button>
+          <label className="text-md font-bold">Follow:</label>
+          <button>
             <FaFacebook className="text-red-500 text-2xl mx-2" />
-            </button>
-            <button>
+          </button>
+          <button>
             <FaYoutube className="text-red-600 text-2xl mx-2" />
-            </button>
-            <button>
+          </button>
+          <button>
             <FaLinkedin className="text-red-600 text-2xl mx-2" />
-            </button>
-            <button>
+          </button>
+          <button>
             <FaGithub className="text-red-600 text-2xl mx-2" />
-            </button>
+          </button>
         </div>
       </div>
     </div>
