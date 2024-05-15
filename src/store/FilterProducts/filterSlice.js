@@ -7,6 +7,7 @@ const initialState = {
 
 const filterSlice = createSlice({
   name: "FilterProd",
+
   initialState,
   reducers: {},
 });
