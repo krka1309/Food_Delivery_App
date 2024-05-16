@@ -18,7 +18,9 @@ export const Card = () => {
     <>
       <div className="card" onClick={() => setCardOpen(!cardOpen)}>
         <BiShoppingBag className="cardIcon" />
-        <span className="flexCenter">{totalQuantity}</span>
+        <span className={totalQuantity > 9 ? "flexCenter1" : "flexCenter"}>
+          {totalQuantity}
+        </span>
       </div>
       <div className={cardOpen ? "overlay" : "nonoverlay"}></div>
       <div className={cardOpen ? "cartItem" : "cardhide"}>
