@@ -17,22 +17,38 @@ function Header() {
         <nav>
           <ul className="flex space-x-4 text-xl font-semibold">
             <li>
-              <Link to="/" className="hover:text-red-400 cursor-pointer">
+              <Link
+                to="/"
+                className="hover:text-red-400 cursor-pointer"
+                style={{ scrollBehavior: "smooth" }}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/food" className="hover:text-red-400 cursor-pointer">
+              <Link
+                to="/food"
+                className="hover:text-red-400 cursor-pointer"
+                style={{ scrollBehavior: "smooth" }}
+              >
                 Foods
               </Link>
             </li>
             <li>
-              <Link to="/cart" className="hover:text-red-400 cursor-pointer">
+              <Link
+                to="/cart"
+                className="hover:text-red-400 cursor-pointer"
+                style={{ scrollBehavior: "smooth" }}
+              >
                 Cart
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-red-400 cursor-pointer">
+              <Link
+                to="/contact"
+                className="hover:text-red-400 cursor-pointer"
+                style={{ scrollBehavior: "smooth" }}
+              >
                 Contact
               </Link>
             </li>

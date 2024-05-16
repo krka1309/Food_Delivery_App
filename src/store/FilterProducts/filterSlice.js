@@ -7,9 +7,12 @@ const initialState = {
 
 const filterSlice = createSlice({
   name: "FilterProd",
-
   initialState,
-  reducers: {},
+  reducers: {
+    filterProducts(state, action) {
+      state.searchText = action.payload;
+    },
+  },
 });
 
 export const filterActions = filterSlice.actions;
