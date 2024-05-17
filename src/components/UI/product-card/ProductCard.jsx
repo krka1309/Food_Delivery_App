@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../../store/shopping-cart/cartSlice";
@@ -6,8 +6,17 @@ import { cartActions } from "../../../store/shopping-cart/cartSlice";
 const ProductCard = (props) => {
   const { id, title, image01, price } = props.item;
   const dispatch = useDispatch();
+  const [buttonText, setButtonText] = useState("Add to Cart");
 
   const addToCart = () => {
+    buttonText == "Add to Cart"
+      ? setButtonText("✔️ Added")
+      : setButtonText("Add to Cart");
+
+    setTimeout(() => {
+      setButtonText("Add to Cart");
+    }, 1000);
+
     dispatch(
       cartActions.addItem({
         id,
@@ -33,7 +42,7 @@ const ProductCard = (props) => {
             className="bg-emerald-400 text-sm px-2 py-1 hover:bg-red-600 hover:text-white rounded"
             onClick={addToCart}
           >
-            Add to Cart
+            {buttonText}
           </button>
         </div>
       </div>
