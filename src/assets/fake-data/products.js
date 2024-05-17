@@ -23,6 +23,7 @@ import product_06_image_01 from "../imagesAll/bread(1).png";
 import product_06_image_02 from "../imagesAll/bread(2).png";
 import product_06_image_03 from "../imagesAll/bread(3).png";
 
+import mokarBurger from "../imagesAll/1.png";
 const products = [
   {
     id: "01",
@@ -175,6 +176,16 @@ const products = [
     image02: product_06_image_02,
     image03: product_06_image_03,
     category: "Bread",
+
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+  },
+
+  {
+    id: "14",
+    title: "Veggie Burger",
+    price: 25.0,
+    image01: mokarBurger,
+    category: "Burger",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
   },
