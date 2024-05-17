@@ -23,7 +23,7 @@ export const Card = () => {
         </span>
       </div>
       <div className={cardOpen ? "overlay" : "nonoverlay"}></div>
-      <div className={cardOpen ? "cartItem" : "cardhide"}>
+      <div className={cardOpen ? "cartItems" : "cardhide"}>
         <div className="title">
           <div className="flex justify-between">
             <h2>Shopping Cart</h2>
