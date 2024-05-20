@@ -76,8 +76,8 @@ function Home() {
         </div>
         <div className="flex justify-center items-center">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 ">
-            {allProducts.map((item) => (
-              <div>
+            {allProducts.map((item, index) => (
+              <div key={index}>
                 <ProductCard item={item} />
               </div>
             ))}
@@ -124,11 +124,10 @@ function Home() {
         </div>
       </section>
       <section className="py-28">
-        <Testimonials/>
+        <Testimonials />
       </section>
     </div>
   );
 }
 
 export default Home;
- 

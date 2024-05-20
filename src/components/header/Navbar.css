@@ -14,13 +14,13 @@
 } */
 
 .cartItem {
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  right: 0;
-  width: 320px;
+  right: 0; */
+  /* width: 320px; */
   height: 100vh;
   padding: 20px;
-  background-color: #fff;
+  background-color: rgb(18, 18, 18);
   box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
   z-index: 88;
 }
@@ -29,7 +29,12 @@
   display: none;
 }
 .homeIcon {
-  margin-bottom: 5px;
+  position: absolute;
+  left: 10%;
+  right: 0;
+  margin-right: 12px;
+  /* margin-bottom: 5px; */
+  margin-top: 3px;
 }
 .foodIcon {
   margin-left: 2px;
@@ -42,4 +47,16 @@
 .phoneIcon {
   margin-left: 2px;
   margin-bottom: 3px;
+}
+.test {
+  width: 100%;
+  /* background: slategray; */
+}
+.columnGap {
+  margin-left: 50px;
+}
+.test1 {
+  width: 100%;
+  margin-left: 12px;
+  /* background: lightgray; */
 }

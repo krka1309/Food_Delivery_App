@@ -8,7 +8,6 @@ import HomeIcon from "@mui/icons-material/Home";
 import LunchDiningIcon from "@mui/icons-material/LunchDining";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
-
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = () => {
@@ -32,47 +31,56 @@ function Navbar() {
           anchor="right"
           sx={{
             "& .MuiDrawer-paper": {
-              width: 320,
+              width: 250,
               transition: "transform 10s ease-in ease-out",
             },
           }}
+
           // className="cartItem"
         >
           {/* <div className={isOpen ? "cartItem" : "cardhide"}></div> */}
           {/* <div className={isOpen ? "overlay" : "nonoverlay"}></div> */}
           <div className={isOpen ? "cartItem" : "cardhide"}>
             <div className="tittle flex justify-between">
-              <h2 className="text-2xl font-bold">Ambrosiya</h2>
+              <h2 className="text-2xl font-bold text-white">Ambrosiya</h2>
               <button onClick={CloseNav}>
-                <AiOutlineClose className="icon" size={30} />
+                <AiOutlineClose size={30} className="text-white" />
               </button>
             </div>
             <nav className="mt-10">
-              <ul className="flex flex-col space-x-4 justify-center items-center gap-10 text-xl">
-                <li className="hover:bg-slate-100 px-10 py-3 ml-3 hover: text-red-400">
-                  <Link to="/">
-                    <HomeIcon className="homeIcon" /> Home
-                  </Link>
-                </li>
-                <li className="hover:bg-slate-100 px-10 py-3 text-red-400">
-                  <Link to="/food">
-                    <LunchDiningIcon className="foodIcon" />
-                    Foods
-                  </Link>
-                </li>
-                <li className="hover:bg-slate-100 px-10 py-3 text-red-400">
-                  <Link to="/cart">
-                    <ShoppingCartIcon className="cartIcon" />
-                    Cart
-                  </Link>
-                </li>
-                <li className="hover:bg-slate-100 px-10 py-3 text-red-400">
-                  <Link to="/contact">
-                    <ContactPageIcon className="phoneIcon" />
-                    Contact
-                  </Link>
-                </li>
-              </ul>
+              <ol className="flex flex-col space-x-4 justify-center items-center gap-10 text-xl">
+                <div className="test1">
+                  <li className="pr-10 py-3 ml-3 hover: text-white -ml-5 w-100% hover:bg-neutral-600">
+                    <Link to="/" className="columnGap">
+                      <HomeIcon className="homeIcon" /> Home
+                    </Link>
+                  </li>
+                </div>
+                <div className="test">
+                  <li className="pr-10 py-3 ml-3 hover: text-white -ml-5 w-100% hover:bg-neutral-600">
+                    <Link to="/food" className="columnGap">
+                      <LunchDiningIcon className="homeIcon" />
+                      Foods
+                    </Link>
+                  </li>
+                </div>
+                <div className="test">
+                  <li className="pr-10 py-3 ml-3 text-white -ml-5 w-100% hover:bg-neutral-600">
+                    <Link to="/cart" className="columnGap">
+                      <ShoppingCartIcon className="homeIcon" />
+                      Cart
+                    </Link>
+                  </li>
+                </div>
+                <div className="test">
+                  <li className="hover:bg-neutral-600 pr-10 py-3 -ml-5 text-white ml-0 w-100% ">
+                    <Link to="/contact" className="columnGap">
+                      <ContactPageIcon className="homeIcon" />
+                      Contact
+                    </Link>
+                  </li>
+                </div>
+              </ol>
             </nav>
           </div>
         </Drawer>
