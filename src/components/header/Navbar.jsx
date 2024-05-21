@@ -35,11 +35,7 @@ function Navbar() {
               transition: "transform 10s ease-in ease-out",
             },
           }}
-
-          // className="cartItem"
         >
-          {/* <div className={isOpen ? "cartItem" : "cardhide"}></div> */}
-          {/* <div className={isOpen ? "overlay" : "nonoverlay"}></div> */}
           <div className={isOpen ? "cartItem" : "cardhide"}>
             <div className="tittle flex justify-between">
               <h2 className="text-2xl font-bold text-white">Ambrosiya</h2>
@@ -51,14 +47,14 @@ function Navbar() {
               <ol className="flex flex-col space-x-4 justify-center items-center gap-10 text-xl">
                 <div className="test1">
                   <li className="pr-10 py-3 ml-3 hover: text-white -ml-5 w-100% hover:bg-neutral-600">
-                    <Link to="/" className="columnGap">
+                    <Link to="/" className="columnGap" onClick={CloseNav}>
                       <HomeIcon className="homeIcon" /> Home
                     </Link>
                   </li>
                 </div>
                 <div className="test">
                   <li className="pr-10 py-3 ml-3 hover: text-white -ml-5 w-100% hover:bg-neutral-600">
-                    <Link to="/food" className="columnGap">
+                    <Link to="/food" className="columnGap" onClick={CloseNav}>
                       <LunchDiningIcon className="homeIcon" />
                       Foods
                     </Link>
@@ -66,7 +62,7 @@ function Navbar() {
                 </div>
                 <div className="test">
                   <li className="pr-10 py-3 ml-3 text-white -ml-5 w-100% hover:bg-neutral-600">
-                    <Link to="/cart" className="columnGap">
+                    <Link to="/cart" className="columnGap" onClick={CloseNav}>
                       <ShoppingCartIcon className="homeIcon" />
                       Cart
                     </Link>
@@ -74,7 +70,11 @@ function Navbar() {
                 </div>
                 <div className="test">
                   <li className="hover:bg-neutral-600 pr-10 py-3 -ml-5 text-white ml-0 w-100% ">
-                    <Link to="/contact" className="columnGap">
+                    <Link
+                      to="/contact"
+                      className="columnGap"
+                      onClick={CloseNav}
+                    >
                       <ContactPageIcon className="homeIcon" />
                       Contact
                     </Link>
