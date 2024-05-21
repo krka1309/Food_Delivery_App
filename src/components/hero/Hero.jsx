@@ -26,7 +26,7 @@ export const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="  md:w-[400px] w-[400px]">
+      <div className="md:w-[400px] w-[400px]">
         <img src={Boy} alt="" />
       </div>
     </div>
